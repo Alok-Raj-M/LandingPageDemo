@@ -35,6 +35,8 @@ html,body{
     color: black;
     font-weight: 500;
     font-size: 15px;
+    border-bottom: 1.5px solid black;
+    opacity: .7;
 }
 .lnavr i{
     color: royalblue;
@@ -44,6 +46,26 @@ html,body{
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+}
+.textcenter h1{
+    font-size: 90px;
+    font-weight: 900;
+}
+.textcenter p{
+    opacity: .7;
+    font-size: 15px;
+    line-height: 18px;
+    margin: 20px;
+    margin-bottom: 20px;
+}
+.textcenter a{
+    text-decoration: none;
+    color: black;
+    border-bottom: 1.2px solid black;
+    font-size: 18px;
+    font-weight: 900;
+    opacity: .7;
+    margin-left: 20px;
 }
 .right{
     width: 60%;
@@ -55,19 +77,64 @@ html,body{
     height: 50%;
     background-color:rebeccapurple;
     display: flex;
-}
-.rbuttom{
-    width: 100%;
-    height: 50%;
-    background-color: goldenrod;
+
 }
 .rtopleft{
     width: 55%;
     height: 100%;
-    background-color: brown;
+    overflow: hidden; 
+}
+.rtopleft img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all ease-in-out 1s;
+}
+.rtopleft:hover img{
+    scale: 1.10;
 }
 .rtopright{
     width: 45%;
     height: 100%;
-    background-color: green;
+    overflow: hidden;
 }
+.rtopright img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all ease-in-out 1s;
+}
+.rtopright:hover img{
+    scale: 1.10;
+}
+.rbuttom{
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+}
+.rbuttom img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all ease 1s;
+}
+.rbuttom:hover img{
+    scale: 1.10;
+}
+
+@media(max-width:600px){
+    .main{
+        flex-direction: column;
+    }
+    .main .left{
+        width: 100%;
+    }
+    .main .right{
+        width: 100%;
+        height: 50%;
+    }
+    .main .left .textcenter p{
+        text-overflow: ellipsis;
+    }
+}
+ 

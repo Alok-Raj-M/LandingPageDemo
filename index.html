@@ -13,16 +13,18 @@
         <div class="lnav">
             <i class="ri-arrow-left-line"></i>
             <div class="lnavr">
-                <a href="#">Home</a>
-                <a href="#">Work</a>
+                <a id="arc" href="#">Home</a>
+                <a id="arc" href="#">Work</a>
                 <i class="ri-twitter-fill"></i>
             </div>
             <div class="textcenter">
                 <h1>Hello,</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est accusamus perferendis, deserunt odio fugit beatae a at ratione itaque atque debitis nesciunt nemo sapiente cum recusandae rerum autem voluptatum tenetur?</p>
-                <a href="#">Read</a>
+                <a id="arc" href="#">Read</a>
             </div>
         </div>
+        <span id="element"></span>
+
     </div>
     <div class="right">
         <div class="rtop">
@@ -38,5 +40,13 @@
         </div>
     </div>
    </div>
+   <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+   <script>
+    var typed = new Typed('#element', {
+      strings: ['<i>Hey I am Alok </i>Web Devloper. ', ''],
+      typeSpeed: 50, 
+    });
+  </script>
+
 </body>
 </html>

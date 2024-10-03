@@ -54,13 +54,13 @@ html,body{
     transform: translate(-50%,-50%);
 }
 .textcenter h1{
-    font-size: 90px;
+    font-size: 9vw;
     font-weight: 900;
 }
 .textcenter p{
     opacity: .7;
-    font-size: 15px;
-    line-height: 18px;
+    font-size: 1.5vw;
+    line-height: 1.5vw;
     margin: 20px;
     margin-bottom: 20px;
 }
